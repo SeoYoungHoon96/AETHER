@@ -1,0 +1,662 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "newyork";
+  font-style: normal;
+  src: url(./font/NewYork.ttf);
+  src: url(./font/NewYork.woff);
+  src: url(./font/NewYork.woff2);
+}
+
+@font-face {
+  font-family: "gmarket";
+  font-style: normal;
+  font-weight: 300;
+  src: url(font/GmarketSansTTFLight.eot);
+  src: url(font/GmarketSansTTFLight.woff);
+  src: url(font/GmarketSansTTFLight.woff2);
+}
+
+@font-face {
+  font-family: "gmarket";
+  font-style: normal;
+  font-weight: 500;
+  src: url(font/GmarketSansTTFMedium.eot);
+  src: url(font/GmarketSansTTFMedium.woff);
+  src: url(font/GmarketSansTTFMedium.woff2);
+}
+
+@font-face {
+  font-family: "gmarket";
+  font-style: normal;
+  font-weight: 700;
+  src: url(font/GmarketSansTTFBold.eot);
+  src: url(font/GmarketSansTTFBold.woff);
+  src: url(font/GmarketSansTTFBold.woff2);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img,
+video,
+iframe {
+  vertical-align: middle;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: black;
+  min-width: 1500px;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all.5s;
+  z-index: 30;
+}
+
+div#header.on .h_icon li {
+  padding: 18px 15px;
+  transition: all.5s;
+}
+
+div#header.on>.h_inner>.gnb>li {
+  padding: 20px 40px;
+  transition: all.5s;
+}
+
+div#header.on .h_logo img {
+  transform: scale(0.8);
+  padding-bottom: 20px;
+  transition: all.5s;
+}
+.h_inner {
+  width: 1500px;
+  position: relative;
+  margin: 0px auto;
+  transition: all.5s;
+}
+
+.sub {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  z-index: 20;
+  display: none;
+}
+
+.sub>li {
+  color: #a89bcc;
+  padding-top: 15px;
+}
+
+.sub>li>a {
+  display: inline-block;
+  position: relative;
+}
+
+.sub>li>a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #814fa4;
+  transition: all 0.8s;
+}
+
+.sub>li:hover>a::after {
+  width: 100%;
+}
+
+.s_box {
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+  top: 62px;
+  left: 0;
+  z-index: 20;
+  background-image: linear-gradient(to bottom, #fffaf5 12%, rgba(255, 250, 245, 0));
+  display: none;
+}
+
+.gnb>li {
+  float: left;
+  padding: 27px 40px;
+  color: #a89bcc;
+  position: relative;
+  transition: all.5s;
+}
+
+.gnb>li>a {
+  position: relative;
+}
+
+.gnb>li>a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #814fa4;
+  transition: all 0.8s;
+}
+
+.gnb>li:hover>a::after {
+  width: 100%;
+}
+
+.h_icon {
+  float: right;
+}
+
+.h_icon li {
+  float: left;
+  padding: 25px 15px;
+  transition: all.5s;
+}
+
+.h_logo {
+  position: absolute;
+  display: inline-block;
+  padding-top: 10px;
+  top: 0;
+  left: 50%;
+  margin-left: -78.5px;
+}
+.h_logo img{
+  transition: all.5s;
+}
+#main {
+  width: 100%;
+  height: 670px;
+  background-image: url(images/sub1_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding-top: 78px;
+}
+
+#main p {
+  font-family: "newyork";
+  font-weight: normal;
+  color: #814fa4;
+  font-size: 80px;
+}
+
+.main1 {
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  transform: translateX(-111%);
+}
+
+.main2 {
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translateX(-80%);
+}
+
+.main3 {
+  position: absolute;
+  top: 420px;
+  left: 50%;
+  transform: translateX(-10%);
+}
+
+#about {
+  padding-top: 140px;
+  padding-bottom: 250px;
+}
+
+.a_inner {
+  width: 1320px;
+  margin: 0px auto;
+}
+
+.a_inner p {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.a_inner h1 {
+  font-family: "gmarket";
+  font-weight: 700;
+  font-size: 110px;
+  text-align: center;
+  color: #fff;
+  text-shadow: -1px -1px 0 #814fa4,
+  1px -1px 0 #814fa4,
+  -1px 1px 0 #814fa4,
+  1px 1px 0 #814fa4;
+  padding-bottom: 100px;
+}
+
+.a_inner h2 {
+  font-family: "gmarket";
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+.a_inner h4 {
+  padding-bottom: 30px;
+}
+
+.a1_r {
+  float: right;
+  padding-top: 66px;
+  padding-right: 210px;
+}
+.a1_r h4{
+  font-weight: 500;
+}
+.a1 {
+  padding-bottom: 165px;
+}
+
+.a2 {
+  padding-bottom: 165px;
+}
+.a2 img{
+  float: right;
+}
+
+.a2_l {
+  float: left;
+  text-align: right;
+  padding-top: 124px;
+  padding-right: 70px;
+}
+.a2_l h4{
+  font-weight: 500;
+}
+.a3_r{
+  float: right;
+  padding-top: 84px;
+  padding-right: 30px;
+}
+.a3_r h4{
+  font-weight: 500;
+}
+#keyword{
+  width: 100%;
+  background-color: #f4f1e8;
+  margin-bottom: 150px;
+}
+.k_inner{
+  width: 905px;
+  height: 600px;
+  margin: 0px auto;
+  text-align: center;
+}
+.k_inner h1{
+  font-family: "newyork";
+  font-size: 45px;
+  font-weight: normal;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+.kw li{
+  float: left;
+  width: 33.3%;
+  font-family: "newyork";
+  font-size: 30px;
+}
+.kw li img{
+  padding-bottom: 33px;
+}
+#bi{
+  padding-bottom: 215px;
+}
+.b_inner{
+  width: 1200px;
+  margin: 0px auto;
+}
+.b_inner>h1{
+  font-size: 45px;
+  font-family: "newyork";
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.b_inner h3{
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+.b_inner p{
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 70px;
+}
+.b_logo{
+  height: 450px;
+  background-image: url(images/about_logo_bg.png);
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 70px;
+}
+.logo1{
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 116px;
+}
+.logo2{
+  float: right;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 212px;
+}
+.logo_design p{
+letter-spacing: 2.4px;
+}
+.typo p{
+  letter-spacing: 3.3px;
+}
+.t_box{
+  height: 135px;
+  padding-bottom: 205px;
+  position: relative;
+}
+.t_left{
+  float: left;
+  position: absolute;
+  top: 0%;
+  left: 116px;
+}
+.t_left h1{
+  font-size: 50px;
+}
+.t_right{
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 180px;
+}
+.t_right h1{
+  font-family: "newyork";
+  font-weight: normal;
+  font-size: 50px;
+  padding-top: 8px;
+}
+.bi_colors p{
+  letter-spacing: 4.3px;
+}
+.c_bg{
+  width: 905px;
+  margin: 0px auto;
+  padding-top: 35px;
+}
+.c_box li{
+  float: left;
+  width: 33.3%;
+  box-sizing: border-box;
+  font-size: 12.45px;
+  font-weight: 500;
+  padding-top: 244px;
+  padding-left: 10px;
+  line-height: 20px;
+}
+.color1{
+  width: 210px;
+  height: 314px;
+  background-image: url(images/sub1_colors1.png);
+  background-repeat: no-repeat;
+}
+.color2{
+  width: 210px;
+  height: 314px;
+  background-image: url(images/sub1_colors2.png);
+  background-repeat: no-repeat;
+}
+.color3{
+  width: 210px;
+  height: 314px;
+  background-image: url(images/sub1_colors3.png);
+  background-repeat: no-repeat;
+}
+#maps{
+width: 100%;
+height: 690px;
+background-image: url(images/sub1_maps_bg.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+.m_inner{
+  width: 1420px;
+  margin: 0px auto;
+  position: relative;
+}
+.m_right{
+  float: right;
+  padding-top: 53px;
+  padding-right: 5px;
+}
+.m_right h1{
+  font-family: "newyork";
+  font-size: 45px;
+  font-weight: normal;
+  padding-bottom: 82px;
+}
+.map_text li{
+  display: flex;
+}
+.map_text img{
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+.m_p{
+  padding-top: 5px;
+}
+.m_p4{
+  padding-top: 8px;
+}
+.m_icon1{
+  padding-right: 6px;
+}
+.m_cs li{
+  line-height: 40px;
+}
+.m_bus{
+  margin-left: -3px;
+}
+.m_right h3{
+  padding-top: 65px;
+}
+.m_middle iframe{
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-45%);
+}
+/*MAPS 부분 수정해야함 */
+#footer {
+  width: 100%;
+  height: 540px;
+  background-color: #f4f1e8;
+}
+
+.f_inner {
+  width: 1320px;
+  margin: 0px auto;
+  text-align: center;
+  color: #a89bcc;
+  font-weight: 500;
+}
+
+.f_logo {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.l1 {
+  font-weight: bold;
+}
+
+.l1 li a:hover {
+  color: #814fa4;
+  transition: all.7s;
+}
+
+.f_left {
+  float: left;
+}
+
+.f_left li {
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+
+.sm {
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.f_icon a {
+  opacity: 0.5;
+  transition: all.5s;
+}
+
+.f_icon a:hover {
+  opacity: 1;
+  transition: all.5s;
+}
+
+.pr {
+  display: inline-block;
+  text-align: left;
+}
+
+.pr li {
+  padding-bottom: 5px;
+}
+
+.pr li:nth-child(1) {
+  font-weight: bold;
+}
+
+.pr li a:hover {
+  color: #814fa4;
+  transition: all.7s;
+}
+
+.help {
+  display: inline-block;
+  text-align: left;
+  padding: 0px 30px;
+}
+
+.help li {
+  padding-bottom: 5px;
+}
+
+.help li:nth-child(1) {
+  font-weight: bold;
+}
+
+.help li a:hover {
+  color: #814fa4;
+  transition: all.7s;
+}
+
+.notice {
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 160px;
+}
+
+.notice li {
+  padding-bottom: 5px;
+}
+
+.notice li:nth-child(1) {
+  font-weight: bold;
+}
+
+.notice li a:hover {
+  color: #814fa4;
+  transition: all.7s;
+}
+
+.f_right {
+  float: right;
+  text-align: left;
+  font-weight: bold;
+}
+
+.f_right h4 {
+  padding-bottom: 10px;
+}
+
+.f_right p {
+  padding-top: 5px;
+}
+
+.m1 {
+  padding-top: 15px;
+}
+
+.copyright {
+  text-align: left;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+#top_btn {
+  position: fixed;
+  bottom: 100px;
+  right: 50%;
+  margin-right: -730px;
+  z-index: 30;
+}
+
+.l1 li a{
+  transition: all.7s;
+}
+
+.pr li a{
+  transition: all.7s;
+}
+
+.help li a{
+  transition: all.7s;
+}
+
+.notice li a{
+  transition: all.7s;
+}

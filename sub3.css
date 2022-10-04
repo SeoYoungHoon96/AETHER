@@ -1,0 +1,629 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "newyork";
+  font-style: normal;
+  src: url(./font/NewYork.ttf);
+  src: url(./font/NewYork.woff);
+  src: url(./font/NewYork.woff2);
+}
+
+@font-face {
+  font-family: "gmarket";
+  font-style: normal;
+  font-weight: 300;
+  src: url(font/GmarketSansTTFLight.eot);
+  src: url(font/GmarketSansTTFLight.woff);
+  src: url(font/GmarketSansTTFLight.woff2);
+}
+
+@font-face {
+  font-family: "gmarket";
+  font-style: normal;
+  font-weight: 500;
+  src: url(font/GmarketSansTTFMedium.eot);
+  src: url(font/GmarketSansTTFMedium.woff);
+  src: url(font/GmarketSansTTFMedium.woff2);
+}
+
+@font-face {
+  font-family: "gmarket";
+  font-style: normal;
+  font-weight: 700;
+  src: url(font/GmarketSansTTFBold.eot);
+  src: url(font/GmarketSansTTFBold.woff);
+  src: url(font/GmarketSansTTFBold.woff2);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img,
+video,
+iframe {
+  vertical-align: middle;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: black;
+  min-width: 1500px;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all.5s;
+  z-index: 999;
+}
+
+div#header.on .h_icon li {
+  padding: 18px 15px;
+  transition: all.5s;
+}
+
+div#header.on>.h_inner>.gnb>li {
+  padding: 20px 40px;
+  transition: all.5s;
+}
+
+div#header.on .h_logo img {
+  transform: scale(0.8);
+  padding-bottom: 20px;
+  transition: all.5s;
+}
+
+.h_inner {
+  width: 1500px;
+  position: relative;
+  margin: 0px auto;
+  transition: all.5s;
+}
+
+.sub {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  z-index: 20;
+  display: none;
+}
+
+.sub>li {
+  color: #a89bcc;
+  padding-top: 15px;
+}
+
+.sub>li>a {
+  display: inline-block;
+  position: relative;
+}
+
+.sub>li>a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #814fa4;
+  transition: all 0.8s;
+}
+
+.sub>li:hover>a::after {
+  width: 100%;
+}
+
+.s_box {
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+  top: 62px;
+  left: 0;
+  z-index: 20;
+  background-image: linear-gradient(to bottom, #fffaf5 15%, rgba(255, 250, 245, 0));
+  display: none;
+}
+
+.gnb>li {
+  float: left;
+  padding: 27px 40px;
+  color: #a89bcc;
+  position: relative;
+  transition: all.5s;
+}
+
+.gnb>li>a {
+  position: relative;
+  transition: all.5s;
+}
+
+.gnb>li>a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #814fa4;
+  transition: all 0.8s;
+}
+
+.gnb>li:hover>a::after {
+  width: 100%;
+}
+
+.h_icon {
+  float: right;
+}
+
+.h_icon li {
+  float: left;
+  padding: 25px 15px;
+  transition: all.5s;
+}
+
+.h_logo {
+  position: absolute;
+  display: inline-block;
+  padding-top: 10px;
+  text-align: center;
+  top: 0;
+  left: 50%;
+  margin-left: -78.5px;
+}
+
+.h_logo img {
+  transition: all.5s;
+}
+
+#sub3_main_banner {
+  width: 100%;
+  height: 567px;
+  margin: 0px auto;
+  padding-top: 78px;
+  background-image: url(images/sub3_main_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+#sub3_main_banner h1 {
+  font-family: "newyork";
+  font-size: 80px;
+  font-weight: normal;
+  color: #814fa4;
+  padding-top: 180px;
+}
+
+#sub3_main_banner h3 {
+  font-family: "newyork";
+  font-size: 40px;
+  font-weight: normal;
+  color: #814fa4;
+}
+#m_magazine{
+  padding-bottom: 155px;
+}
+#m_magazine h1 {
+  text-align: center;
+  font-family: "newyork";
+  font-weight: normal;
+  font-size: 60px;
+  padding-top: 145px;
+  padding-bottom: 100px;
+}
+
+.m_inner {
+  width: 100%;
+  height: 754px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.bg1 img {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-2%);
+}
+
+.bg1 {
+  width: 100%;
+  height: 754px;
+  background-image: url(images/sub3_magazine_bg3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg1 h2 {
+  display: inline-block;
+}
+
+.m_2 {
+  display: inline-block;
+}
+
+.bg2 img {
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  transform: translateX(-8%);
+}
+
+.bg2 {
+  width: 100%;
+  height: 754px;
+  background-image: url(images/sub3_magazine_bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg3 img {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-2%);
+}
+
+.bg3 {
+  width: 100%;
+  height: 754px;
+  background-image: url(images/sub3_magazine_bg4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg4 img {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-2%);
+}
+
+.bg4 {
+  width: 100%;
+  height: 754px;
+  background-image: url(images/sub3_magazine_bg5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg5 img {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-2%);
+}
+
+.bg5 {
+  width: 100%;
+  height: 754px;
+  background-image: url(images/sub3_magazine_bg6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg6 img {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-2%);
+}
+
+.bg6 {
+  width: 100%;
+  height: 754px;
+  background-image: url(images/sub3_magazine_bg7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg7 img {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-2%);
+}
+
+.bg7 {
+  width: 100%;
+  height: 754px;
+  background-image: url(images/sub3_magazine_bg8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg8 img {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-2%);
+}
+
+.bg8 {
+  width: 100%;
+  height: 754px;
+  background-image: url(images/sub3_magazine_bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg9 img {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-2%);
+}
+
+.bg9 {
+  width: 100%;
+  height: 754px;
+  background-image: url(images/sub3_magazine_bg9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mt_box {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 350px;
+  transform: translateX(-150%);
+}
+
+.mt_box h2 {
+  font-size: 80px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.month {
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.mt_box p {
+  color: #fff;
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+
+.mt_box b {
+  color: red;
+  font-weight: 900;
+}
+
+.am {
+  font-weight: 500;
+  color: #c6c4c4;
+  padding-left: 8px;
+}
+
+.mt_box h3 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 900;
+}
+#s_magazine{
+  width: 100%;
+  height: 1890px;
+}
+.sm_inner{
+  width: 1130px;
+  margin: 0px auto;
+}
+.sub_magazine li{
+width: 33.3%;
+height: 481px;
+float: left;
+padding-bottom: 150px;
+transition: all.7s;
+}
+.tbox{
+  padding-left: 26px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.tbox strong{
+  font-size: 40px;
+  font-weight: 800;
+  padding-right: 10px;
+  transition: all.7s;
+}
+.sub_magazine li:hover{
+  transform: translateY(-30px
+  );
+  transition: all.7s;
+}
+.sub_magazine li:hover strong{
+  color: #a89bcc;
+  transition: all.5s;
+}
+#footer {
+  width: 100%;
+  height: 540px;
+  background-color: #f4f1e8;
+}
+
+.f_inner {
+  width: 1320px;
+  margin: 0px auto;
+  text-align: center;
+  color: #a89bcc;
+  font-weight: 500;
+}
+
+.f_logo {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.l1 {
+  font-weight: bold;
+}
+.l1 li a{
+  transition: all.7s;
+}
+.l1 li a:hover {
+  color: #814fa4;
+  transition: all.7s;
+}
+
+.f_left {
+  float: left;
+}
+
+.f_left li {
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+
+.sm {
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.f_icon a {
+  opacity: 0.5;
+  transition: all.5s;
+}
+
+.f_icon a:hover {
+  opacity: 1;
+  transition: all.5s;
+}
+
+.pr {
+  display: inline-block;
+  text-align: left;
+}
+
+.pr li {
+  padding-bottom: 5px;
+}
+.pr li a{
+  transition: all.7s;
+}
+.pr li:nth-child(1) {
+  font-weight: bold;
+}
+
+.pr li a:hover {
+  color: #814fa4;
+  transition: all.7s;
+}
+
+.help {
+  display: inline-block;
+  text-align: left;
+  padding: 0px 30px;
+}
+
+.help li {
+  padding-bottom: 5px;
+}
+.help li a{
+  transition: all.7s;
+}
+.help li:nth-child(1) {
+  font-weight: bold;
+}
+
+.help li a:hover {
+  color: #814fa4;
+  transition: all.7s;
+}
+
+.notice {
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 160px;
+}
+
+.notice li {
+  padding-bottom: 5px;
+  transition: all.7s;
+}
+.notice li a{
+  transition: all.7s;
+}
+.notice li:nth-child(1) {
+  font-weight: bold;
+}
+
+.notice li a:hover {
+  color: #814fa4;
+  transition: all.7s;
+}
+
+.f_right {
+  float: right;
+  text-align: left;
+  font-weight: bold;
+}
+
+.f_right h4 {
+  padding-bottom: 10px;
+}
+
+.f_right p {
+  padding-top: 5px;
+}
+
+.m1 {
+  padding-top: 15px;
+}
+
+.copyright {
+  text-align: left;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+#top_btn {
+  position: fixed;
+  bottom: 100px;
+  right: 50%;
+  margin-right: -730px;
+  z-index: 30;
+}
+.swiper-button-prev:after {
+  content: url(images/sub3_magazine_left.png);
+  z-index: 10;
+}
+.swiper-button-next:after {
+  content: url(images/sub3_magazine_right.png);
+  z-index: 10;
+}
+.swiper-button-prev{
+  left: 30px;
+}
+.swiper-button-next{
+  right: 30px;
+}
