@@ -402,10 +402,12 @@ padding-left: 430px;
   bottom: 0;
   left: 0px;
 }
-
+.all_product li:hover .pe2{
+  text-decoration: underline currentColor 1.5px;
+}
 .pe1 {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   color: #8575b7;
 }
 
