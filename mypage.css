@@ -182,6 +182,13 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+.banner img{
+  transition: all.6s;
+}
+.banner:hover img{
+  transform: scale(1.1,1.1);
+  transition: all.6s;
+}
 #footer{
   padding-top: 30px;
   padding-bottom: 50px;
