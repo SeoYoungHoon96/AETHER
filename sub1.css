@@ -94,6 +94,7 @@ div#header.on .h_logo img {
   padding-bottom: 20px;
   transition: all.5s;
 }
+
 .h_inner {
   width: 1500px;
   position: relative;
@@ -191,9 +192,11 @@ div#header.on .h_logo img {
   left: 50%;
   margin-left: -78.5px;
 }
-.h_logo img{
+
+.h_logo img {
   transition: all.5s;
 }
+
 #main {
   width: 100%;
   height: 670px;
@@ -255,9 +258,9 @@ div#header.on .h_logo img {
   text-align: center;
   color: #fff;
   text-shadow: -1px -1px 0 #814fa4,
-  1px -1px 0 #814fa4,
-  -1px 1px 0 #814fa4,
-  1px 1px 0 #814fa4;
+    1px -1px 0 #814fa4,
+    -1px 1px 0 #814fa4,
+    1px 1px 0 #814fa4;
   padding-bottom: 100px;
 }
 
@@ -272,155 +275,197 @@ div#header.on .h_logo img {
   padding-bottom: 30px;
 }
 
+.a1_img {
+  float: left;
+}
+
 .a1_r {
   float: right;
   padding-top: 66px;
-  padding-right: 210px;
 }
-.a1_r h4{
+
+.a1_r h4 {
   font-weight: 500;
 }
+
 .a1 {
+  width: 1100px;
   padding-bottom: 165px;
 }
 
 .a2 {
   padding-bottom: 165px;
+  width: 1300px;
 }
-.a2 img{
+
+.a2 img {
   float: right;
+  padding-left: 64px;
 }
 
 .a2_l {
-  float: left;
+  float: right;
   text-align: right;
   padding-top: 124px;
-  padding-right: 70px;
 }
-.a2_l h4{
+
+.a2_l h4 {
   font-weight: 500;
 }
-.a3_r{
-  float: right;
+
+.a3 {
+  width: 1300px;
+}
+
+.a3 img {
+  float: left;
+  padding-right: 64px;
+}
+
+.a3_r {
+  float: left;
   padding-top: 84px;
-  padding-right: 30px;
 }
-.a3_r h4{
+
+.a3_r h4 {
   font-weight: 500;
 }
-#keyword{
+
+#keyword {
   width: 100%;
   background-color: #f4f1e8;
   margin-bottom: 150px;
 }
-.k_inner{
+
+.k_inner {
   width: 905px;
   height: 600px;
   margin: 0px auto;
   text-align: center;
 }
-.k_inner h1{
+
+.k_inner h1 {
   font-family: "newyork";
   font-size: 45px;
   font-weight: normal;
   padding-top: 80px;
   padding-bottom: 70px;
 }
-.kw li{
+
+.kw li {
   float: left;
   width: 33.3%;
   font-family: "newyork";
   font-size: 30px;
 }
-.kw li img{
+
+.kw li img {
   padding-bottom: 33px;
 }
-#bi{
+
+#bi {
   padding-bottom: 215px;
 }
-.b_inner{
+
+.b_inner {
   width: 1200px;
   margin: 0px auto;
 }
-.b_inner>h1{
+
+.b_inner>h1 {
   font-size: 45px;
   font-family: "newyork";
   font-weight: normal;
   text-align: center;
   padding-bottom: 100px;
 }
-.b_inner h3{
+
+.b_inner h3 {
   font-size: 30px;
   font-weight: 500;
   padding-bottom: 40px;
 }
-.b_inner p{
+
+.b_inner p {
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 70px;
 }
-.b_logo{
+
+.b_logo {
   height: 450px;
   background-image: url(images/about_logo_bg.png);
   background-repeat: no-repeat;
   position: relative;
   padding-bottom: 70px;
 }
-.logo1{
+
+.logo1 {
   float: left;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 116px;
 }
-.logo2{
+
+.logo2 {
   float: right;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 212px;
 }
-.logo_design p{
-letter-spacing: 2.4px;
+
+.logo_design p {
+  letter-spacing: 2.4px;
 }
-.typo p{
+
+.typo p {
   letter-spacing: 3.3px;
 }
-.t_box{
+
+.t_box {
   height: 135px;
   padding-bottom: 205px;
   position: relative;
 }
-.t_left{
-  float: left;
-  position: absolute;
-  top: 0%;
-  left: 116px;
-}
-.t_left h1{
-  font-size: 50px;
-}
-.t_right{
+
+.t_right {
   float: right;
   position: absolute;
-  top: 0;
+  top: 0%;
   right: 180px;
 }
-.t_right h1{
+
+.t_right h1 {
+  font-size: 50px;
+}
+
+.t_left {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 116px;
+}
+
+.t_left h1 {
   font-family: "newyork";
   font-weight: normal;
   font-size: 50px;
   padding-top: 8px;
 }
-.bi_colors p{
-  letter-spacing: 4.3px;
+
+.bi_colors p {
+  letter-spacing: 4.2px;
 }
-.c_bg{
+
+.c_bg {
   width: 905px;
   margin: 0px auto;
   padding-top: 35px;
 }
-.c_box li{
+
+.c_box li {
   float: left;
   width: 33.3%;
   box-sizing: border-box;
@@ -430,78 +475,95 @@ letter-spacing: 2.4px;
   padding-left: 10px;
   line-height: 20px;
 }
-.color1{
+
+.color1 {
   width: 210px;
   height: 314px;
   background-image: url(images/sub1_colors1.png);
   background-repeat: no-repeat;
 }
-.color2{
+
+.color2 {
   width: 210px;
   height: 314px;
   background-image: url(images/sub1_colors2.png);
   background-repeat: no-repeat;
 }
-.color3{
+
+.color3 {
   width: 210px;
   height: 314px;
   background-image: url(images/sub1_colors3.png);
   background-repeat: no-repeat;
 }
-#maps{
-width: 100%;
-height: 690px;
-background-image: url(images/sub1_maps_bg.png);
-background-repeat: no-repeat;
-background-position: center;
+
+#maps {
+  width: 100%;
+  height: 690px;
+  background-image: url(images/sub1_maps_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.m_inner{
+
+.m_inner {
   width: 1420px;
   margin: 0px auto;
   position: relative;
 }
-.m_right{
+
+.m_right {
   float: right;
   padding-top: 53px;
   padding-right: 5px;
 }
-.m_right h1{
+
+.m_right h1 {
   font-family: "newyork";
   font-size: 45px;
   font-weight: normal;
   padding-bottom: 82px;
 }
-.map_text li{
+
+.map_text li {
   display: flex;
 }
-.map_text img{
+
+.map_text img {
   padding-right: 20px;
   padding-bottom: 40px;
 }
-.m_p{
+
+.m_p {
   padding-top: 5px;
 }
-.m_p4{
+
+.m_p4 {
   padding-top: 8px;
 }
-.m_icon1{
+
+.m_icon1 {
   padding-right: 6px;
 }
-.m_cs li{
+
+.m_cs li {
   line-height: 40px;
 }
-.m_bus{
+
+.m_bus {
   margin-left: -3px;
 }
-.m_right h3{
+
+.m_right h3 {
   padding-top: 65px;
 }
-.m_middle iframe{
+
+.m_middle iframe {
   position: absolute;
   top: 150px;
   left: 50%;
   transform: translateX(-45%);
 }
+
 /*MAPS 부분 수정해야함 */
 #footer {
   width: 100%;
@@ -645,18 +707,18 @@ background-position: center;
   z-index: 30;
 }
 
-.l1 li a{
+.l1 li a {
   transition: all.7s;
 }
 
-.pr li a{
+.pr li a {
   transition: all.7s;
 }
 
-.help li a{
+.help li a {
   transition: all.7s;
 }
 
-.notice li a{
+.notice li a {
   transition: all.7s;
 }
